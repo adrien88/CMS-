@@ -14,17 +14,14 @@ using namespace std;
 */
 int main ()
 {
-    // valeur age
-    int annee(0);
-    int age(0);
-    // valeur nom
-    string nom("");
-    string status("");
 
-    cout << "Coucou les gens. :)" << endl << "Comment vous appelez vous ?" << endl;
+    int annee, age;
+    string nom, status;
+
+    cout << "Coucou les gens. :)\n\nComment vous appelez vous ?\n";
     getline(cin, nom);
 
-    cout << "Quelle est votre année de naisance ?" << endl;
+    cout << "\nQuelle est votre année de naisance ?\n";
     cin >> annee;
 
     // calcul de l'âge
@@ -38,7 +35,8 @@ int main ()
         status = "Vous êtes mineur.";
     }
 
-    cout << "Vous vous appelez : " << nom << " et avez " << age << " ans." << endl;
+    //
+    cout <<  "\nVous vous appelez : " << nom << " et avez " << age << " ans." << endl;
     cout << status << endl;
     return 0;
 }
